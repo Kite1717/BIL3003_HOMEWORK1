@@ -1,0 +1,23 @@
+Minimum Support deðerini giriniz:
+0.55
+Confidence / Lift / Leverage deðerlerinden birini giriniz:
+Lift
+Seçtiðiniz ölçünün minimum deðeri giriniz:
+0.4
+------------------------
+Sonuçlar:
+Frequent Item Sets:
+
+Apriori'ye göre oluþan kurallar:
+MIN SUP COUNT : 162.8
+
+(L1)
+{ A1=196, C1=222, D1=296, }
+
+(L2)
+{ A1-D1=196, D1-C1=222, }
+
+1 - IF  Packet Size_Byte = D1 [1440.0,1440.0]  296   =>  Node = A1 [3.0,6.0]  196 Support : 0.66  Lift : 1.0
+2 - IF  Node = A1 [3.0,6.0]  196   =>  Packet Size_Byte = D1 [1440.0,1440.0]  296 Support : 0.66  Lift : 1.0
+3 - IF  Average_Delay_Time_Per_Sec = C1 [4.06E-4,0.00101]  222   =>  Packet Size_Byte = D1 [1440.0,1440.0]  296 Support : 0.75  Lift : 1.0
+4 - IF  Packet Size_Byte = D1 [1440.0,1440.0]  296   =>  Average_Delay_Time_Per_Sec = C1 [4.06E-4,0.00101]  222 Support : 0.75  Lift : 1.0
